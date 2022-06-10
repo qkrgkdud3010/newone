@@ -10,6 +10,7 @@ let score1 = 0;
 let score2 = 0;
 let score3 = 0;
 let score4 = 0;
+let lastscore = 0;
 var listVar;
 var listVar2;
 let type1 = "oil";
@@ -40,65 +41,78 @@ function onGeoOk(position) {
 
       if (humidity > 90){
          let score1=0.5;
+         window.localStorage.setItem('weatherscore', score1);
          console.log(score1);
       }
 
       if (humidity > 80 && humidity <=90){
            let score1=0.4;
+           window.localStorage.setItem('weatherscore', score1);
            console.log(score1);
       }
 
       if (humidity > 60 && humidity <=80){
          let score1=0.3;
+         window.localStorage.setItem('weatherscore', score1);
          console.log(score1);
       }
 
       if (humidity > 40 && humidity <=60){
          let score1=0.2;
+         window.localStorage.setItem('weatherscore', score1);
          console.log(score1);
       }
 
       if (humidity > 20 && humidity <=40){
          let score1=0.1;
+         window.localStorage.setItem('weatherscore', score1);
          console.log(score1);
       }
 
       if (humidity > 0 && humidity <=20){
          let score1=0;
+         window.localStorage.setItem('weatherscore', score1);
          console.log(score1);
       }
 
       if (temp > 30){
          let score2=0.5;
+         window.localStorage.setItem('weatherscore2', score2);
          console.log(score2);
       }
 
       if (temp > 20 && temp <30){
            let score2=0.4;
+           window.localStorage.setItem('weatherscore2', score2);
            console.log(score2);
       }
 
       if (temp > 10 && temp <20){
          let score2=0.3;
+         window.localStorage.setItem('weatherscore2', score2);
          console.log(score2);
       }
 
       if (temp > 0 && temp <10){
          let score2=0.2;
+         window.localStorage.setItem('weatherscore2', score2);
          console.log(score2);
       }
 
       if (temp > -10 && temp <0){
          let score2=0.1;
+         window.localStorage.setItem('weatherscore2', score2);
          console.log(score2);
       }
 
       if (temp < -10 ){
          let score2=0;
+         window.localStorage.setItem('weatherscore2', score2);
          console.log(score2);
       }
 
-      
+     
+
 
 
       }); 
@@ -134,26 +148,34 @@ function test() {
 
       if(listVar == type1){
          let score3 = 0.5;
+         window.localStorage.setItem('skinscore', score3);
          console.log(score3);
       }
 
       if(listVar == type2){
          let score3 = 0.25;
+         window.localStorage.setItem('skinscore', score3);
          console.log(score3);
       }
 
       if(listVar == type3){
          let score3 = 0;
+         window.localStorage.setItem('skinscore', score3);
          console.log(score3);
       }
 
       if(listVar2 == type4 ){
+         window.localStorage.setItem('cosmetic', 'yes');
          console.log("유");
       }
 
       if(listVar2 == type5 ){
+         window.localStorage.setItem('cosmetic', 'no');
          console.log("무");
       }
+
+   let score4 = score1 + score2+ score3;
+   console.log(score4);
 
    }
 
