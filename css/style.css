@@ -1,3 +1,4 @@
+
 /* 컨텐츠 영역 */
 .content-box {
     box-sizing: border-box;
@@ -12,3 +13,301 @@
     font-size: 40px;
     white-space: nowrap;
 }
+
+.survey-question-contents {
+    padding-top: 36px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/*설문 버튼 부분*/
+.survey-question-footer {
+    padding: 25px;
+}
+button {
+    cursor: pointer;
+}
+
+.btn {
+    appearance: none;
+    border: 1px solid #333;
+    display: inline-block;
+    padding: 0 36px;
+    height: 50px;
+    min-width: 74px;
+    font-weight: 700;
+    text-align: center;
+    outline: none;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+.btn-radius {
+    border-radius: 25px;
+}
+
+.btn-dark {
+    margin-left: 20px;
+    padding: 0 65px;
+    background-color: #333;
+    border: none;
+    color: #fff;
+}
+
+/*-----------------*/
+
+/*start*/
+
+.reason {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-btn {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #23b6b8;
+    padding: 15px;
+    box-shadow: 4px 4px 4px #333;
+    border-radius: 25px;
+}
+
+.btm {
+    margin-top: 10px;
+}
+
+.btm-b {
+    margin-bottom: 30px;
+}
+
+.arrow-op {
+    opacity: 0.6;
+}
+
+.start-font {
+    margin-top: 100px;
+    margin-bottom: 10px;
+     color: #333;
+     font-size: 16px;
+     font-weight: 600;
+     text-align: center;
+   
+}
+
+.start-str {
+    font-weight: 600;
+}
+/*--------------------*/
+
+/*popup*/
+.popup_layer {position:fixed;top:0;left:0;z-index: 10000; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4); }
+/*팝업 박스*/
+.popup_box{position: relative;top:50%;left:50%; overflow: auto; height: 500px; width:375px;transform:translate(-50%, -50%);z-index:1002;box-sizing:border-box;background:#fff;box-shadow: 2px 5px 10px 0px rgba(0,0,0,0.35);-webkit-box-shadow: 2px 5px 10px 0px rgba(0,0,0,0.35);-moz-box-shadow: 2px 5px 10px 0px rgba(0,0,0,0.35);}
+/*컨텐츠 영역*/
+.popup_box .popup_cont {padding:50px 50px 20px 50px;line-height:1.4rem;font-size:14px; }
+.popup_box .popup_cont h2 {padding:15px 0;color:#333;margin:0;}
+.popup_box .popup_cont p{ border-top: 1px solid #666;padding-top: 30px;}
+/*버튼영역*/
+.popup_box .popup_btn {display:table;table-layout: fixed;width:100%;height:70px;background:#ECECEC;word-break: break-word;}
+.popup_box .popup_btn a {position: relative; display: table-cell; height:70px;  font-size:17px;text-align:center;vertical-align:middle;text-decoration:none; background:#ECECEC;}
+.popup_box .popup_btn a:before{content:'';display:block;position:absolute;top:26px;right:29px;width:1px;height:21px;background:#fff;-moz-transform: rotate(-45deg); -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg);}
+.popup_box .popup_btn a:after{content:'';display:block;position:absolute;top:26px;right:29px;width:1px;height:21px;background:#fff;-moz-transform: rotate(45deg); -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg);}
+.popup_box .popup_btn a.close_day {background:#5d5d5d;}
+.popup_box .popup_btn a.close_day:before, .popup_box .popup_btn a.close_day:after{display:none;}
+/*오버레이 뒷배경*/
+.popup_overlay{position:fixed;top:0px;right:0;left:0;bottom:0;z-index:1001;;background:rgba(0,0,0,0.5);}
+/*popup-btn*/
+
+.pop-btn {
+    border: 1px solid #333;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #23b6b8;
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+}
+/*-----------*/
+
+
+.que {
+    color: #999;
+    font-size: 13px;
+}
+
+.que-question {
+    color: #333333;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.que-line {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #999;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.que-answer-wrap {
+    padding: 30px 0;
+}
+
+.que-answer-font {
+    color: #333333;
+    font-size: 15px;
+}
+
+.mg-top {
+    margin-top: 15px;
+}
+
+/*로딩 스피너*/
+.loading {
+    display: flex;
+    justify-content: center;
+  }
+  
+.loading--full-height {
+    align-items: center;
+    height: 100%;
+}
+  
+.loading::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border: 10px solid #dddddd;
+    border-top-color: #009579;
+    border-radius: 50%;
+    transform: rotate(0.16turn);
+    animation: loading 1s ease infinite;
+}
+  
+@keyframes loading {
+    /* Safari support */
+    from {
+      transform: rotate(0turn);
+    }
+    
+    to {
+      transform: rotate(1turn);
+    }
+}
+
+/*설문 radio CSS*/
+
+.layer-box {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 400px;
+    height: 300px;
+    background-color: #ffffff;
+}
+
+.ul-radio {
+    padding: 0;
+    margin: 20px 0 0;
+    list-style: none;
+}
+
+.li-radio {
+    position: relative;
+    height: 60px;
+}
+
+input[type="radio"] {
+    position: relative;
+    top: 10px;
+    margin: 0;
+    height: 40px;
+    width: 100%;
+    transition: #dddddd;
+    border: 0;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+    outline: none;
+    z-index: 1000;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+input[type="radio"]:before {
+    content: "\e876";
+    position: absolute;
+    font-family: 'Material Icons';
+    display: inline-block;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #999999;
+    z-index: 110;
+}
+
+input[type="radio"]:checked::before {
+    color: #ffffff;
+}
+
+input[type="radio"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #23b6b8;
+    z-index: 100;
+    -webkit-animation: check-move 0.20s;
+    -moz-animation: check-move 0.20s;
+    animation: check-move 0.20s;
+}
+
+@keyframes check-move {
+    0% {
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+
+    100% {
+        height: 50px;
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+label {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    z-index: 1100;
+    height: 30px;
+    color: #333333;
+}
+
+input[type="radio"]:checked ~ label {
+    color: #ffffff;
+}
+
+/*--------------------------*/

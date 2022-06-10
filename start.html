@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+    <title>이유</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+</head>
+
+<body class="tr">
+
+    <!-- 전체 영역 -->
+    <div class="wrap">
+
+        <!-- 헤더 영역 -->
+        
+        <!-- //헤더 영역 -->
+
+        <!-- 컨텐츠 영역 -->
+        <div class="reason">
+            <img src="./img/Reason.png">
+        </div>
+        
+        <button onclick="location.href='survey.html'" class="start-btn">
+            내 피부타입 <a class="start-str">알아보기</a>
+        </button>
+        
+        <div class="start-font">이미 내 피부 타입을 알고 있다면 ?</div>
+        <div class="tac">
+            <img src="./img/arrow.png" class="arrow-op">
+        </div>
+
+        <a href="javascript:openPop()">
+            <button class="start-btn btm">
+            내 피부타입 <a class="start-str">선택하기</a>
+            </button>
+        </a>
+        <div class="popup_layer" id="popup_layer" style="display: none;">
+            <div class="popup_box">
+                <div style="height: 10px; width: 375px; float: top;">
+                  <a href="javascript:closePop();"><img src="./img/ic_close.svg" class="m_header-banner-close" width="30px" height="30px"></a>
+                </div>
+                <!--팝업 컨텐츠 영역-->
+                <div class="popup_cont">
+                    <h4>나의 피부 타입은 ?</h4>
+                    <p>
+                        <div class="tac"><button onclick="location.href='index.html'" class="pop-btn btm">지성</button></div>
+                        <div class="tac"><button onclick="location.href='index.html'" class="pop-btn btm">건성</button></div>
+                        <div class="tac"><button onclick="location.href='index.html'" class="pop-btn btm btm-b">복합성</button></div>
+                    </p>
+                </div>
+                <!--팝업 버튼 영역-->
+                <div class="popup_btn" style="float: bottom;">
+                    <a href="javascript:closePop();">닫기</a>
+                </div>
+            </div>
+          </div>
+        <!-- //컨텐츠 영역 -->
+
+        <!-- 하단 메뉴 영역 -->
+        
+        <!-- //하단 메뉴 영역 -->
+
+    </div>
+    <!-- //전체 영역 -->
+
+    <!-- js -->
+    <script src="js/survey.js"></script>
+
+</body>
+
+</html>
