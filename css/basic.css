@@ -107,6 +107,9 @@ input::-ms-clear {
 .fdc {
     flex-direction: column;
 }
+.fdr{
+    flex-direction: row;
+}
 .fww {
     flex-wrap: wrap;
 }

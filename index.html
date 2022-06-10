@@ -10,6 +10,7 @@
     <!-- css -->
     <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/radio.css">
 
     <title>이유</title>
 
@@ -44,8 +45,46 @@
                 <div id="weather" class="ex-text abs xy-middle tac tb">
                     <span>온도</span>
                     <span>습도</span>
-
                 </div>
+
+                <div class="mb-3">
+                    <label for="userSex" class="form-label">피부 타입</label>
+                    <div class="form_toggle flex fdr jcsb">
+                        <div class="form_radio_btn">
+                            <input id="radio-1" type="radio" name="usertype" value="oil" checked>
+                            <label for="radio-1">지성</label>
+                        </div>
+
+                        <div class="form_radio_btn">
+                            <input id="radio-2" type="radio" name="usertype" value="balance">
+                            <label for="radio-2">중성</label>
+                        </div>
+
+                        <div class="form_radio_btn">
+                            <input id="radio-3" type="radio" name="usertype" value="dry">
+                            <label for="radio-3">건성</label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="makeup" class="form-label">화장 유무</label>
+                    <div class="form_toggle flex fdr jcsb">
+                        <div class="form_radio_btn">
+                            <input id="radio-4" type="radio" name="makeup" value="yes" checked>
+                            <label for="radio-4">유</label>
+                        </div>
+
+                        <div class="form_radio_btn">
+                            <input id="radio-5" type="radio" name="makeup" value="no">
+                            <label for="radio-5">무</label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <input type="button" id="submit" name="submit" value="submit">
 
             </div>
 
@@ -97,6 +136,8 @@
 
     <!-- js -->
     <script src="js/custom.js"></script>
+
+
 
 </body>
 
