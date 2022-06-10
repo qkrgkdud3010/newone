@@ -18,7 +18,7 @@
  
 /* Checked */
 .form_radio_btn input[type=radio]:checked + label {
-    background:  #23b6b8
+    background:  #23b6b8;
     color: #fff;
 }
  
