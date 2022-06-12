@@ -3,7 +3,12 @@ const COORDS = 'coords'; //좌표를 받을 변수
 
 //DOM객체들 
 const weatherInfo = document.querySelector('.weatherInfo');
+const weatherInfo2 = document.querySelector('.weatherInfo2');
+const weatherInfo3 = document.querySelector('.weatherInfo');
+
+
 const weatherIconImg = document.querySelector('.weatherIcon');
+
 
 //초기화 
 function init() {
@@ -44,7 +49,9 @@ function getWeather(lat, lon) {
         const weatherIconAdrs = `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`;
     
         //받아온 정보들을 표현한다. 
-        weatherInfo.innerText = `${temperature} °C / @${place} / ${weatherDescription}`;
+        weatherInfo.innerText = `${temperature} °C `;
+        weatherInfo2.innerText = place;
+        weatherInfo3.innerText = weatherDescription; 
         weatherIconImg.setAttribute('src', weatherIconAdrs);
     })
     .catch((error) => console.log("error:", error));
