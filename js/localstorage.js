@@ -24,5 +24,7 @@ function init() {
     document.querySelector("#result2").innerHTML = lackscore.toFixed(1);
     document.querySelector("#result3").innerHTML = cosmetic;
     document.querySelector("#result4").innerHTML = solscore.toFixed(2);
+    document.querySelector("#result5").innerHTML = solscore.toFixed(2);
+    document.querySelector("#result6").innerHTML = solscore.toFixed(2);
 
 }

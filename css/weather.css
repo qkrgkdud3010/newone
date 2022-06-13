@@ -24,3 +24,38 @@
 .weatherInfo {
     font-size: 1.5em;
 }
+
+.wtr-res {
+    margin: 60px auto ;
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+    width: 80%;
+    height: 50px;
+    background-color: #23b6b8;
+}
+
+.wtr-st {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.wtr-ex {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.wtr-mgt {
+    margin-top: 10px;
+}
+
+.wtrmg {
+    margin-top: 30px
+}
+
+.wtr-font {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
