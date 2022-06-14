@@ -82,13 +82,13 @@ function lastscore(){
 
 		if(waterscoresum > 7) {
             var waterintensive = "수분 인텐시브";
-            window.localStorage.setItem('waterintensive ', waterintensive);
+            window.localStorage.setItem('waterintensive', waterintensive);
         }
 				
 
 		if(surveyscore13 > 0) {
             var weakskin = "민감성 피부 타입용";
-			window.localStorage.setItem('weakskin ', weakskin);
+			window.localStorage.setItem('weakskin', weakskin);
 
 		}		
 

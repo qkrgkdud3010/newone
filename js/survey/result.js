@@ -10,8 +10,7 @@ window.onload = function result(){
 
         document.querySelector("#usertype").innerHTML = skintype;
   
-    
-   
+       
         document.querySelector("#recom1").innerHTML = itemtype;
   
     
